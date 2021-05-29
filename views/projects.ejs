@@ -1,0 +1,45 @@
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>
+
+<!--Projects content-->
+<main class="container">
+    <div class="jumbotron">
+        <div class="col-sm-6 col-md-6 col-xs-12" style="padding-bottom: 20px;">
+             <h3>Project Accomplishments</h3>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                <img src="/Assets/images/process_automation.jpg" class="card-img-top" alt="process-automation">
+                <div class="card-body">
+                    <h5 class="card-title">Automate Process</h5>
+                    <p class="card-text">Developed tools via shell scripts and CRON jobs to streamline systems, such as sending user list to external group for security compliance reviews, user account clean ups, purge tables based on retention criteria.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="/Assets/images/website_migration.jpg" class="card-img-top" alt="website-migration">
+                    <div class="card-body">
+                        <h5 class="card-title">Javascript Framework Migration</h5>
+                        <p class="card-text">Led and developed migration of existing application from jQuery to AngularJS project; the migration increased the applications maintainability and eliminated multiple source codes of  view components.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="/Assets/images/management-tool.png" class="card-img-top" alt="management-tool">
+                    <div class="card-body">
+                        <h5 class="card-title">Internal Project Management Tool</h5>
+                        <p class="card-text">Developed a web tool that will be used for project management tracking and resource planning using PHP and Oracle. The tool helped our clients Application front door to efficiently administer projects and efficiently track the team’s capacity.</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </div>
+</main>
+
+<%- include partials/bottom_nav.ejs %>
+
+<%- include partials/footer.ejs %>

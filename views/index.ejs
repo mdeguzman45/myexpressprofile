@@ -5,7 +5,31 @@
 	<!--Main Content-->
 	<main class="container">
 		<div class="jumbotron">
-			<h1 class="display-4">Welcome to the <%= title %> page</h1>
+		<div class="col-sm-6 col-md-6 col-xs-12" style="padding-bottom: 20px;">
+             <h1 class="display-4">Welcome to My page</h1>
+        </div>
+
+		<div class="card w-75">
+			<div class="card-body">
+				<h5 class="card-title">Mission Statement</h5>
+				<p class="card-text">Learn new techonologies.</p>
+				<p class="card-text">Continuous learning of emerging technologies.</p>
+				<p class="card-text">Apply learnings on real world scenarios.</p>
+			</div>
+		</div>
+
+		<div class="col-sm-6 col-md-6 col-xs-12" style="padding-top: 20px;">
+  			<div class="btn-group" role="group">
+    			<button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+      				Go To Page
+    			</button>
+    			<ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+					<li><a class="dropdown-item" href="/about">About</a></li>
+					<li><a class="dropdown-item" href="/projects">Projects</a></li>
+					<li><a class="dropdown-item" href="/services">Services</a></li>
+					<li><a class="dropdown-item" href="/contact">Contacts</a></li>
+    			</ul>
+  			</div>
 		</div>
 	</main>
 

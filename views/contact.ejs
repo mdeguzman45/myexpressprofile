@@ -1,0 +1,74 @@
+
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>
+
+<main class="container">
+    <div class="jumbotron">
+        <div class="col-sm-6 col-md-6 col-xs-12">
+            <div class="container" style="padding-bottom: 20px;">
+                <h3>Contact Me</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Email</h5>
+                        <p class="card-text">marc_tres03@yahoo.com</p>
+                        <!--<a href="#" class="btn btn-primary">Email Me</a>-->
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">LinkedIn</h5>
+                        <p class="card-text">www.linkedin.com/in/marc-louis-gene-de-guzman-48883113</p>
+                        <!--<a href="www.linkedin.com/in/marc-louis-gene-de-guzman-48883113" class="btn btn-primary">Go to LinkedIn</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron">
+        <form>
+            <div class="row form-group">
+                <div class="col">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" class="form-control" placeholder="First name">
+                </div>
+                <div class="col">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" class="form-control" placeholder="Last name">
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <div class="col">
+                    <label for="contact-number">Contact Number</label>
+                    <input type="text" id="contact-number" class="form-control" placeholder="Contact Number">
+                </div>
+                <div class="col">
+                    <label for="user-email">Email address</label>
+                    <input type="email" class="form-control" id="user-email" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+            </div>
+
+            <div class="row form-group" style="padding-bottom: 20px;">
+                <label for="user-message">Message:</label>
+                <textarea class="form-control" rows="5" id="user-message"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+        </form>
+    </div>
+</main>
+
+<%- include partials/bottom_nav.ejs %>
+
+<%- include partials/footer.ejs %>
