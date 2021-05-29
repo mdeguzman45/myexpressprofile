@@ -1,0 +1,14 @@
+/**
+ * filename: app.css
+ * student name: Marc Louis Gene De Guzman
+ * student number: 301171014
+ * Date: May 29, 2021
+ */
+
+/* custom css goes here */
+.jumbotron {
+	padding: 2rem 1rem;
+	margin-bottom: 2rem;
+	background-color: #e9ecef;
+	border-radius: .3rem;
+}
