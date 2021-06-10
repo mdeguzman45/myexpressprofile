@@ -6,7 +6,7 @@
  * Date: May 29, 2021
  */
 
-var app = require('./app');
+var app = require('./server/config/app');
 var debug = require('debug')('myexpressprofilev2:server');
 var http = require('http');
 
