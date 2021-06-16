@@ -35,31 +35,31 @@
 
     <div class="jumbotron">
         <form method="POST" action="/submit-contact-form">
-            <div class="row form-group">
+            <div class="row form-group mb-3">
                 <div class="col">
-                    <label for="first-name">First Name</label>
+                    <label for="first-name" class="form-label">First Name</label>
                     <input type="text" name="first-name" id="first-name" class="form-control" placeholder="First name">
                 </div>
                 <div class="col">
-                    <label for="last-name">Last Name</label>
+                    <label for="last-name" class="form-label">Last Name</label>
                     <input type="text" name="last-name" id="last-name" class="form-control" placeholder="Last name">
                 </div>
             </div>
 
-            <div class="row form-group">
+            <div class="row form-group mb-3">
                 <div class="col">
-                    <label for="contact-number">Contact Number</label>
+                    <label for="contact-number" class="form-label">Contact Number</label>
                     <input type="text" name="contact-number" id="contact-number" class="form-control" placeholder="Contact Number">
                 </div>
                 <div class="col">
-                    <label for="user-email">Email address</label>
+                    <label for="user-email" class="form-label">Email address</label>
                     <input type="email" name="user-email" class="form-control" id="user-email" aria-describedby="emailHelp" placeholder="Enter email">
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
             </div>
 
-            <div class="row form-group" style="padding-bottom: 20px;">
-                <label for="user-message">Message:</label>
+            <div class="row form-group mb-3">
+                <label for="user-message" class="form-label">Message:</label>
                 <textarea class="form-control" rows="5" id="user-message" name="user-message"></textarea>
             </div>
 
