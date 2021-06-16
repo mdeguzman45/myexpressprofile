@@ -21,7 +21,8 @@ module.exports.displayBookList = (req, res, next) => {
             // console.log(BookList);
             res.render('book/list', {
                 title: 'Books',
-                BookList: bookList
+                BookList: bookList,
+                displayName: req.user ? req.user.displayName : ''
             });
         }
     });
@@ -29,7 +30,8 @@ module.exports.displayBookList = (req, res, next) => {
 
 module.exports.displayAddPage = (req, res, next) => {
     res.render('book/add', {
-        title: 'Add Book'
+        title: 'Add Book',
+        displayName: req.user ? req.user.displayName : ''
     });
 }
 
@@ -64,7 +66,8 @@ module.exports.displayEditPage = (req, res, next) => {
         } else {
             res.render('book/edit', {
                 title: 'Edit Book',
-                book: currentBook
+                book: currentBook,
+                displayName: req.user ? req.user.displayName : ''
             });
         }
     });

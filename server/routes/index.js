@@ -28,6 +28,21 @@ router.get('/services', indexController.displaySerivcesPage);
 /* GET Contact Us page. */
 router.get('/contact', indexController.displayContactPage);
 
+/* Get Route for displaying the Login page */
+router.get('/login', indexController.displayLoginPage);
+
+/* POST Route for processing the Login page*/
+router.post('/login', indexController.processLoginPage);
+
+/* Get Route for displaying the Register page */
+router.get('/register', indexController.displayRegisterPage);
+
+/* POST Route for processing the Register page*/
+router.post('/register', indexController.processRegisterPage);
+
+/* Get Route to perform User logout */
+router.get('/logout', indexController.performLogout);
+
 /* Handle submit form on Contact Page */
 router.post('/submit-contact-form', function(req, res, next) {
 

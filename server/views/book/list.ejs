@@ -4,18 +4,23 @@
 
 	<!--Main Content-->
 	<main class="container">
-		<div class="jumbotron">
+		<!--<div class="jumbotron">-->
             <div class="row">
-                <!--<div class="col-md-offset-3 col-md-8">-->
-                    <div class="offset-md-1 col-md-11">
+                <div class="offset-md-1 col-md-10">
                     <h1><%= title %></h1>
+
+                    <% if (typeof displayName == 'string' && displayName) { %>
                     <a href="/book-list/add" class="btn btn-primary" role="button">
                         <i class="fas fa-plus-circle"></i> Add Book
                     </a>
+                    
+                    <% } %>
+                    <br />
                     <br />
                     <table class="table table-bordered table-striped table-hover">
                         <!-- Header Row -->
                         <tr class="d-flex">
+                        <% if (typeof displayName == 'string' && displayName) { %>
                             <th class="text-center col-2">Name</th>
                             <th class="text-center col-2">Author</th>
                             <th class="text-center col-1">Year</th>
@@ -23,10 +28,18 @@
                             <th class="text-center col-1">Price</th>
                             <th class="text-center col-1"></th>
                             <th class="text-center col-1"></th>
+                        <% } else { %>
+                            <th class="text-center col-2">Name</th>
+                            <th class="text-center col-2">Author</th>
+                            <th class="text-center col-1">Year</th>
+                            <th class="col-6">Description</th>
+                            <th class="text-center col-1">Price</th>
+                        <% } %>
                         </tr>
 
                         <% for (let count = 0; count < BookList.length; count++) { %>
                         <tr class="d-flex">
+                        <% if (typeof displayName == 'string' && displayName) { %>
                             <td class="text-center col-2"><%= BookList[count].name %></td>
                             <td class="text-center col-2"><%= BookList[count].author %></td>
                             <td class="text-center col-1"><%= BookList[count].published %></td>
@@ -42,12 +55,19 @@
                                     <i class="fas fa-trash-alt"> Delete </i>
                                 </a>
                             </td>
+                        <% } else { %>
+                            <td class="text-center col-2"><%= BookList[count].name %></td>
+                            <td class="text-center col-2"><%= BookList[count].author %></td>
+                            <td class="text-center col-1"><%= BookList[count].published %></td>
+                            <td class="col-6"><%= BookList[count].description %></td>
+                            <td class="text-center col-1"><%= BookList[count].price %></td>
+                        <% } %>
                         </tr>
                         <% } %>
                     </table>
                 </div>
             </div>
-        </div>
+        <!--</div>-->
 	</main>
 
 <%- include ../partials/bottom_nav.ejs %>
